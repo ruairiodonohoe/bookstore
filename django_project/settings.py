@@ -179,3 +179,7 @@ ACCOUNT_SIGNUP_FIELDS = ["email*", "password1*"]
 
 
 DEFAULT_FROM_EMAIL = "admin@djangobookstore.com"
+
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
