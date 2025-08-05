@@ -74,3 +74,7 @@ dist/
 
 # Local settings
 local_settings.py
+
+
+# docker yml
+docker-compose.yml
