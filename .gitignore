@@ -78,3 +78,4 @@ local_settings.py
 
 # docker yml
 docker-compose.yml
+docker-compose-prod.yml
