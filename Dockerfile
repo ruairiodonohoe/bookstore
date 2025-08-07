@@ -24,11 +24,14 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project files (owned by root initially)
 COPY . .
 
+# Run collectstatic during build
+#RUN python manage.py collectstatic --noinput
+
 # Change ownership of /code to devuser
-RUN chown -R devuser:devgroup /code
+#RUN chown -R devuser:devgroup /code
 
 # Switch to the non-root user
-USER devuser
+#USER devuser
 
 # By default, the container will start here, e.g.:
 # CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
