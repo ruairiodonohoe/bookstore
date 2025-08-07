@@ -30,7 +30,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env.bool("DJANGO_DEBUG", default=False)
 
 ALLOWED_HOSTS = [
-    "ruairi-bookstore-8b4209670356.herokuapp.com",
+    "ruairi-bookstore-136bec1c7a25.herokuapp.com",
     "localhost",
     "127.0.0.1",
 ]
@@ -227,3 +227,6 @@ if "test" in sys.argv:
     MIDDLEWARE = [
         mw for mw in MIDDLEWARE if not mw.startswith("django.middleware.cache.")
     ]
+
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
